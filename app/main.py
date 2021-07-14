@@ -18,7 +18,8 @@ def incoming_sms():
     elif body == 'bye':
         resp.message("Goodbye")
     else:
-        resp.message(f"{body} <-- this is what you sent")
+        resp.message(f"{body} <-- this is what you sent\n \
+        {type(body)}<-- body type")
 
     return str(resp)
 
