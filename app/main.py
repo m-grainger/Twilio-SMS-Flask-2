@@ -14,7 +14,7 @@ def incoming_sms():
 
     # Determine the right reply for this message
     if 'hello there' in body:
-        resp.message("Hi!")
+        resp.message("Hello, it is a pleasure to meet you!")
     elif body == 'bye':
         resp.message("Goodbye")
     else:
