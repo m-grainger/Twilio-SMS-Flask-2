@@ -17,6 +17,8 @@ def incoming_sms():
         resp.message("Hi!")
     elif body == 'bye':
         resp.message("Goodbye")
+    else:
+        resp.message(f"{body} <-- this is what you sent")
 
     return str(resp)
 
