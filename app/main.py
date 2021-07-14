@@ -16,7 +16,7 @@ def incoming_sms():
     if 'hello there' in body:
         resp.message("Hello, it is a pleasure to meet you!")
     elif body == 'bye':
-        resp.message("Goodbye")
+        resp.message("Goodbye for now- check in with me later!")
     else:
         resp.message(f"{body} <-- this is what you sent\n \
         {type(body)} <-- body type")
